@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>陳季宏的 CV</title>
+</head>
+<body>
+    <div class="app">
+        <div class="app-header">
+            <img class="avatar mx-auto rounded-3xl" src="./assets/avatar.jpg">
+            <div class="my-2 text-2xl text-center">陳季宏</div>
+            <div class="all-flex-center">
+                <div>新北市新莊區 │</div>
+                <div>darkfanxing@gmail.com │</div>
+                <a class="all-flex-center hover:text-sky-600 hover:underline" target="_blank" href="https://github.com/darkfanxing">
+                    <img class="inline-block h-5 mx-auto" src="./assets/github-mark.svg">
+                    <span class="inline-block">@darkfanxing</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- education -->
+        <div class="section">
+            <div class="section-header">
+                學歷簡介
+            </div>
+
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">成功大學，人工智慧機器人 │ 碩士</span>
+                    <span class="right-label">09/2021 ~ 06/2023</span>
+                </div>
+                <ol class="disc-list">
+                    <li class="underline">論文研究：結合深度學習之拓樸最佳化方法於撓性夾爪設計</li>
+                    <li>將不需準備訓練資料之非監督式類神經網路，結合傳統最佳化方法，並設計損失函數，極大幅增加收斂速度、提高最佳化指標數值</li>
+                </ol>
+            </div>
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">臺北科技大學，機械工程系 │ 學士</span>
+                    <span class="right-label">09/2017 ~ 06/2021</span>
+                </div>
+                <ol class="disc-list">
+                    <li><span class="underline">專心程度系統</span>：藉由單一 EEG 感測器取得腦波訊號，並透過標準化、IAAFT、MODWT、IMODWT 等方法處理雜訊，最後使用 1D-CNN + RNN 模型辨識專心程度，達到 70% 準確率</li>
+                    <li><span class="underline">非接觸式電梯按鍵系統</span>：藉由低成本鏡頭取得影像，經過對比度調整、濾波、提取輪廓等處理後，使用 ResNet-34 進行訓練，最後達到約 90% 準確度</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                工作及社群經驗
+            </div>
+            
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">崇惠電機股份有限公司 │ 製程 RD</span>
+                    <span class="right-label">09/2017 ~ 06/2021（寒暑假）</span>
+                </div>
+                <ol class="disc-list">
+                    <li>改善配電盤製程，減少約 40% 生產時間</li>
+                    <li>使用 Python、Vue.js、SQLite 來開發訂單提示、電子公佈欄及零件查詢系統，使公司各部門更加數位化</li>
+                </ol>
+            </div>
+
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">SITCON 學生計算機年會 │ 行銷組長</span>
+                    <span class="right-label">10/2020 ~ 09/2021</span>
+                </div>
+                <ol class="disc-list">
+                    <li>帶領組員，籌集百萬預算的千人年會</li>
+                    <li>熟悉跨組協作、與廠商溝通、合作方式的討論</li>
+                </ol>
+            </div>
+
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">北科程式設計研究社 │ 社長</span>
+                    <span class="right-label">09/2018 ~ 06/2019</span>
+                </div>
+                <ol class="disc-list">
+                    <li>設計、規劃課程，並領導數十次籌備會議</li>
+                    <li>對外講授多場公開課程，涵蓋網頁開發、Python 爬蟲，和 Google 合作開設 MLCC 機器學習入門等</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                程式交易專案
+            </div>
+
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">Shioaji 下單機</span>
+                    <span class="right-label">2023 ~ Now</span>
+                </div>
+                <div class="project-item"></div>
+                <ol class="disc-list">
+                    <li>前端：使用 Vue.js 開發下單介面，包含增加、修改、取消、刪除條件單等功能</li>
+                    <li>後端：使用 Python FastAPI 及 Shioaji 來進行開發，包含實際下單、進出場邏輯測試，以及儲存訂閱之 Tick 資料</li>
+                </ol>
+            </div>
+
+            <div>
+                <div class="font-bold my-5">
+                    <span class="text-2xl">BTC/USDT 4hr 策略開發</span>
+                    <span class="right-label">2023</span>
+                </div>
+                <ol class="disc-list">
+                    <li>
+                        透過趨勢指標與成交量變化來制定順勢價量策略，並使用 TradingView Pine Script 進行撰寫，單筆進場金額為本金之 15%，回測時間從 2020/01/01 開始至 2023/10/01，共約 3.75 年
+                    </li>
+                    <li>
+                        期間淨利達 56.48%，勝率 43%、盈虧比 2.02，最大回撤 8.45%，風報比約 6.7
+                    </li>
+                    <li>
+                        該策略為波段策略，能夠捕捉大趨勢漲幅，進場多在啟動位置，但於震盪區間容易產生連續虧損
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                技能專長
+            </div>
+
+            <div>
+                <ol class="disc-list mt-2">
+                    <li>
+                        程式語言：Python、JavaScript、MATLAB、PIC18（Assembly Code）
+                    </li>
+                    <li>
+                        AI 相關：PyTorch、TensorFlow、資料處理、分析及視覺化
+                    </li>
+                    <li>
+                        其他：Git、MySQL、SQLite、Redis、GCP、Pine Script，以及因開發需求而接觸過 XQ Script
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="section-header">
+                自傳
+            </div>
+            <div class="leading-7">
+                <div>我是陳季宏，出生在新北的五人家庭，熱愛分析、思考，享受解決問題的成就感，也樂於分享自身所學、挑戰不同領域，同時朝向追求卓越務實的自我期許邁進。</div>
+                <div class="mt-6">大學期間，除了機械相關課程，我也對程式設計產生極大的興趣，時常與同學分享和討論，後來在大家的推舉下，擔任北科程式設計研究社的社長，主導數十次籌備會議，並對外講授多場 Python、網頁前端等課程，同時受 Google 邀請擔任 MLCC（Machine Learning Crash Course）講師，奠定溝通合作、領導力以及表達能力的基礎。在寒暑假時，我也在崇惠電機負責改善現場製程效率及資料數位化，並使用 Python、Vue.js，以及 SQLite 開發訂單提示、電子公佈欄及零件查詢系統。</div>
+                <div class="mt-6">為了能夠認識更多志同道合的夥伴，我參與全國性的學生社群 —— SITCON 學生計算機年會，一同投身學生資訊教育、推廣開源精神。在擔任行銷組長期間，帶領組員一同思考如何解決舉辦年會的龐大支出、藉由媒體爭取曝光，從合作方案的規劃，與贊助商和媒體的信件往來、洽談，到年會當天新聞稿，都屬於我們的職責，而這些經歷也強化了我的表達、組織能力和協商技巧。</div>
+                <div class="mt-6">「在不斷學習與交流的環境中擴展視野」正是我所嚮往的，而這也激發繼續攻讀碩士的念頭。2021 年，順利通過成功大學 —— 人工智慧機器人碩士學位學程的申請，並於今年 8 月畢業。在論文方面，我將類神經網路與傳統拓樸最佳化結合，以非監督式進行訓練，獲得高解析度的輸出結果，並將其應用於撓性夾爪設計；與常見的模型架構、傳統最佳化演算法相比，由於重新設計損失函數且無需準備訓練資料，因此可以在<span class="underline">縮短執行時間 90% 以上</span>的同時，獲得更佳的指標數值。</div>
+                <div class="mt-6">研究所期間除了撰寫論文，也開始踏入加密貨幣市場，並開始嘗試接觸技術分析、理解市場波動的背後原因，後來因接案而開發下單介面，將原在 XQ Script 的台股交易邏輯轉為 Python，其使用 Vue.js 撰寫網頁前端、FastAPI 與 Shioaji 建置網頁後端。此外，我也從邏輯開始發想，藉由肯特納通道與成交量來判斷做多/做空，在 TradingView 上以 Pine Script 撰寫策略，並於 BTC/USDT 近 3.8 年的 4hr 數據進行回測，達到風報比 6.7 的不錯結果。</div>
+                <div class="mt-6">畢業後兩個月，我已經調整好自己，對於新的挑戰也準備就緒。未來若有機會加入貴公司，當充分發揮自身所長，加速數位金融的發展，同時深化金融領域的知識！</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">
+                參考資料
+            </div>
+            <div>
+                <ol class="disc-list mt-2">
+                    <li>
+                        董事 蘇怡安，崇惠電機股份有限公司，台灣。02-8209-4271
+                    </li>
+                    <li>
+                        SITCON 學生計算機年會，<a class="hover:text-sky-600 hover:underline" href="https://sitcon.org">https://sitcon.org</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

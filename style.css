@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC);
+
+.disc-list {
+    list-style-position: outside;
+    list-style: disc;
+    margin-left: 40px;
+}
+
+.disc-list li {
+    margin-bottom: 5px;
+}
+
+.all-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.section-header {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-top: 4px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.section {
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.right-label {
+    float: right;
+    background-color: #d1d5db;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.avatar {
+    width: 95px;
+}
+
+.app-header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.app {
+    min-width: 500px;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
