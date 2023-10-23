@@ -49,7 +49,8 @@
 }
 
 .app {
-    min-width: 600px;
+    padding: 0 30px;
+    min-width: 700px;
     max-width: 780px;
     margin: 0 auto;
 }
